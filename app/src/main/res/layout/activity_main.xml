@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/calculatorScreen"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="end|center_vertical"
+        android:text="@string/lbl_0"
+        android:textSize="34sp"
+        android:background="#FFEEEEEE"
+        android:textColor="#000000"
+        android:padding="12dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="0,1,2,3">
+
+        <TableRow android:paddingTop="8dp">
+            <Button android:id="@+id/clearEverything" android:text="@string/lbl_clear" />
+            <Button android:id="@+id/backOne" android:text="@string/lbl_back" />
+            <Button android:id="@+id/signChange" android:text="@string/lbl_sign" />
+            <Button android:id="@+id/squareRoot" android:text="@string/lbl_sqrt" />
+        </TableRow>
+
+        <TableRow android:paddingTop="6dp">
+            <Button android:id="@+id/n7" android:text="@string/lbl_7" />
+            <Button android:id="@+id/n8" android:text="@string/lbl_8" />
+            <Button android:id="@+id/n9" android:text="@string/lbl_9" />
+            <Button android:id="@+id/division" android:text="@string/lbl_div" />
+        </TableRow>
+
+        <TableRow android:paddingTop="6dp">
+            <Button android:id="@+id/n4" android:text="@string/lbl_4" />
+            <Button android:id="@+id/n5" android:text="@string/lbl_5" />
+            <Button android:id="@+id/n6" android:text="@string/lbl_6" />
+            <Button android:id="@+id/multiplication" android:text="@string/lbl_mul" />
+        </TableRow>
+
+        <TableRow android:paddingTop="6dp">
+            <Button android:id="@+id/n1" android:text="@string/lbl_1" />
+            <Button android:id="@+id/n2" android:text="@string/lbl_2" />
+            <Button android:id="@+id/n3" android:text="@string/lbl_3" />
+            <Button android:id="@+id/subtraction" android:text="@string/lbl_sub" />
+        </TableRow>
+
+        <TableRow android:paddingTop="6dp">
+            <Button android:id="@+id/n0" android:text="@string/lbl_0" android:layout_span="2" />
+            <Button android:id="@+id/dot" android:text="@string/lbl_dot" />
+            <Button android:id="@+id/addition" android:text="@string/lbl_add" />
+        </TableRow>
+
+        <TableRow android:paddingTop="6dp">
+            <Button android:id="@+id/nr" android:text="@string/lbl_eq" android:layout_span="4" android:layout_height="64dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
